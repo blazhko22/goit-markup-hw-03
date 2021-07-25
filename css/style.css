@@ -21,6 +21,8 @@ ul {
    padding: 24px 15px 25px 15px;
    align-items: center;
    width: 1200px;
+   border-bottom: 1px solid #ECECEC;
+   margin: auto;
 }
 .link-logo {
     font-weight: 700;
@@ -83,6 +85,10 @@ ul {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 94px;
+    box-sizing: border-box;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
 }
 .hero-title {
     font-weight: 900;
@@ -91,7 +97,8 @@ ul {
     letter-spacing: 0.06em;
     color: var(--white-color);
     text-transform: uppercase;
-    margin: 0px 0px 30px 0px;
+    margin: 0px auto 30px auto;
+    width: 696px;
 }
 .button {
     color: var(--white-color);
@@ -102,12 +109,17 @@ ul {
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
+    margin: 0px auto 0px auto;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
 }
 /*Особености*/
 .specifics {
     width: 1200px;
     padding: 0px 15px;
     margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .specifics-list {
     margin: 0px;
@@ -137,6 +149,8 @@ ul {
     width: 1200px;
     padding: 0px 15px;
     margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .title {
     font-weight: 700;
@@ -156,6 +170,8 @@ ul {
 .team {
     width: 1200px;
     padding: 94px 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .team-list {
     margin: 0px;
@@ -181,6 +197,14 @@ ul {
 .footer {
     background-color: #2F303A;
     padding: 60px 15px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1600px;
+}
+.section-footer {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .logo-white {
     color: white;
@@ -223,7 +247,7 @@ ul {
 .section-list {
     width: 1200px;
     padding: 0px 15px;
-    margin: 94px 0px;
+    margin: 94px auto;
 }
 .key-list {
     margin: 0px 0px 50px 0px;
@@ -241,6 +265,8 @@ ul {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+    border-radius: 4px;
+    border: none;
 }
 .key:hover,
 .key:focus {
