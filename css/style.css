@@ -16,12 +16,15 @@ ul {
     list-style: none;
 }
 /*Шапка*/
+.border-bottom {
+    border-bottom: 1px solid #ECECEC;
+    margin: auto;
+}
 .header {
    display: flex;
    padding: 24px 15px 25px 15px;
    align-items: center;
    width: 1200px;
-   border-bottom: 1px solid #ECECEC;
    margin: auto;
 }
 .link-logo {
@@ -168,16 +171,23 @@ ul {
 }
 /*Наша команда*/
 .team {
-    width: 1200px;
     padding: 94px 15px;
     margin-left: auto;
     margin-right: auto;
+    background-color: var(--gray-button);;
 }
 .team-list {
-    margin: 0px;
+    margin: 0px auto;
     padding: 0px;
     display: flex;
     justify-content: space-between;
+    width: 1200px;
+}
+.team-list li {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
 }
 .team-title {
     font-weight: 500;
@@ -242,7 +252,7 @@ ul {
 }
 .general-link:hover,
 .general-link:focus {
-
+    
 }
 .section-list {
     width: 1200px;
@@ -272,6 +282,7 @@ ul {
 .key:focus {
     color: var(--white-color);
     background-color: var(--blue-color);
+    border: none;
 }
 .navigation-list {
     margin: 0px;
@@ -283,6 +294,10 @@ ul {
 .navigation-list li:nth-child(n + 4) {
     margin-top: 30px;
   }
+.navigation-list li {
+    border: 1px solid #EEEEEE;
+    padding: 0px 0px 20px 0px;
+}
 .link-navigation {
    text-decoration: none; 
 }
@@ -292,11 +307,11 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 0px 24px;
 }
 .indent-text {
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-text-color);
-    margin: 0px;
+    margin: 0px 0px 0px 24px;
 }
