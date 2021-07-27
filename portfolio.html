@@ -5,21 +5,22 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WebStudio</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>    
         <!-- Шапка-->
-        <header class="border-bottom">
+        <header class="header">
             <!-- Верхняя линия-->
-            <div class="header">
+            <div class="container header-container">
                 <a href="./index.html" class="link-logo">Web<span class="logo-black">Studio</span></a>
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="./index.html" class="nav-link">Студия</a></li>
-                        <li><a href="./portfolio.html" class="general-link">Портфолио</a></li>
+                        <li><a href="./portfolio.html" class="nav-link general-link">Портфолио</a></li>
                         <li><a href="./contact.html" class="nav-link">Контакты</a></li>
                     </ul>
                 </nav>
@@ -32,89 +33,109 @@
         <!-- Текст--> 
         <main>
             <section class="section-list">
-                <ul class="key-list">
-                    <li><button type="button" class="key">Все</button></li>
-                    <li><button type="button" class="key">Веб-сайты</button></li>
-                    <li><button type="button" class="key">Приложения</button></li>
-                    <li><button type="button" class="key">Дизайн</button></li>
-                    <li><button type="button" class="key">Маркетинг</button></li>
-                </ul>
-                <ul class="navigation-list">
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/tehnokriak.jpg" alt="Технокряк" width="370">
-                            <h2 class="text-title">Технокряк</h2>
-                            <p class="indent-text">Веб-сайт</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
-                            <h2 class="text-title">Постер New Orlean vs Golden Star</h2>
-                            <p class="indent-text">Дизайн</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/restaurant.jpg" alt="Ресторан Seafood" width="370">
-                            <h2 class="text-title">Ресторан Seafood</h2>
-                            <p class="indent-text">Приложение</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/prime.jpg" alt="Проект Prime" width="370">
-                            <h2 class="text-title">Проект Prime</h2>
-                            <p class="indent-text">Маркетинг</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/boxes.jpg" alt="Проект Boxes" width="370">
-                            <h2 class="text-title">Проект Boxes</h2>
-                            <p class="indent-text">Приложение</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/website.jpg" alt="Inspiration has no Borders" width="370">
-                            <h2 class="text-title">Inspiration has no Borders</h2>
-                            <p class="indent-text">Веб-сайт</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/edition.jpg" alt="Издание Limited Edition" width="370">
-                            <h2 class="text-title">Издание Limited Edition</h2>
-                            <p class="indent-text">Дизайн</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/lab.jpg" alt="Проект LAB" width="370">
-                            <h2 class="text-title">Проект LAB</h2>
-                            <p class="indent-text">Маркетинг</p>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="link-navigation">
-                            <img src="img/business.jpg" alt="Growing Business" width="370">
-                            <h2 class="text-title">Growing Business</h2>
-                            <p class="indent-text">Приложение</p>
-                        </a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul class="key-list">
+                        <li class="key-button"><button type="button" class="key general-key">Все</button></li>
+                        <li class="key-button"><button type="button" class="key">Веб-сайты</button></li>
+                        <li class="key-button"><button type="button" class="key">Приложения</button></li>
+                        <li class="key-button"><button type="button" class="key">Дизайн</button></li>
+                        <li class="key-button"><button type="button" class="key">Маркетинг</button></li>
+                    </ul>
+                    <ul class="navigation-list">
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/tehnokriak.jpg" alt="Технокряк" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Технокряк</h2>
+                                    <p class="indent-text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/poster.jpg" alt="Постер New Orlean vs Golden Star" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Постер New Orlean vs Golden Star</h2>
+                                    <p class="indent-text">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/restaurant.jpg" alt="Ресторан Seafood" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Ресторан Seafood</h2>
+                                    <p class="indent-text">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/prime.jpg" alt="Проект Prime" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Проект Prime</h2>
+                                    <p class="indent-text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/boxes.jpg" alt="Проект Boxes" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Проект Boxes</h2>
+                                    <p class="indent-text">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/website.jpg" alt="Inspiration has no Borders" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Inspiration has no Borders</h2>
+                                    <p class="indent-text">Веб-сайт</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/edition.jpg" alt="Издание Limited Edition" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Издание Limited Edition</h2>
+                                    <p class="indent-text">Дизайн</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/lab.jpg" alt="Проект LAB" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Проект LAB</h2>
+                                    <p class="indent-text">Маркетинг</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="" class="link-navigation">
+                                <img src="img/business.jpg" alt="Growing Business" width="370">
+                                <div class="list-text">
+                                    <h2 class="text-title">Growing Business</h2>
+                                    <p class="indent-text">Приложение</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </main>
         <!-- Подвал-->
         <footer class="footer">
-            <div class="section-footer">
+            <div class="container">
                 <a href="./" class="link-logo">Web<span class="logo-white">Studio</span></a>
                 <address class="address-footer">
                     <ul class="address-list">
-                        <li><a href="./https://www.google.com.ua/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk" class="address-maps">г. Киев, пр-т Леси Украинки, 26</a></li>
-                        <li><a href="mailto:info@devstudio.com" class="footer-info">info@devstudio.com</a></li>
-                        <li><a href="tel:+380961111111" class="footer-info">+38 096 111 11 11</a></li>
+                        <li class="list-info"><a href="./https://www.google.com.ua/maps/place/бульвар+Лесі+Українки,+26,+Київ,+02000/@50.4265841,30.5361971,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0!8m2!3d50.4265807!4d30.5383858?hl=uk" class="address-maps">г. Киев, пр-т Леси Украинки, 26</a></li>
+                        <li class="list-info"><a href="mailto:info@devstudio.com" class="footer-info">info@devstudio.com</a></li>
+                        <li class="list-info"><a href="tel:+380961111111" class="footer-info">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
             </div>    

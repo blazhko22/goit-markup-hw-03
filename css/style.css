@@ -11,21 +11,35 @@ body {
     color: var(--main-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
+    margin: 0;
+    padding: 0;
 }
 ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding: 0 15px;
+    width: 1200px;
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,h6,p {
+    margin: 0;
+}
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
 }
 /*Шапка*/
-.border-bottom {
-    border-bottom: 1px solid #ECECEC;
-    margin: auto;
-}
 .header {
+    border-bottom: 1px solid #ECECEC; 
+    padding: 25px 0; 
+}
+.header-container {
    display: flex;
-   padding: 24px 15px 25px 15px;
-   align-items: center;
-   width: 1200px;
-   margin: auto;
+   align-items: center;   
 }
 .link-logo {
     font-weight: 700;
@@ -43,8 +57,6 @@ ul {
     margin-left: 93px;
 }
 .nav-list{
-    margin: 0px;
-    padding: 0px;
     display: flex;
     width: 294px;
     justify-content: space-between;
@@ -62,8 +74,6 @@ ul {
     color: var(--blue-color);
 }
 .info-list{
-    margin: 0px;
-    padding: 0px;
     display: flex;
     margin-left: auto;
     width: 307px;
@@ -85,10 +95,6 @@ ul {
 .hero {
     background-color: #2F303A;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 94px;
-    box-sizing: border-box;
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
@@ -109,24 +115,20 @@ ul {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.06em;
-    margin: 0px auto 0px auto;
+    margin: 0px auto;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
 }
 /*Особености*/
 .specifics {
-    width: 1200px;
-    padding: 0px 15px;
+    margin-top: 94px;
     margin-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .specifics-list {
-    margin: 0px;
-    padding: 0px;
     display: flex;
     justify-content: space-between;
 }
@@ -134,7 +136,7 @@ ul {
     width: 270px;
 }
 .specifics-title {  
-    margin: 0px 0px 10px 0px;    
+    margin-bottom: 10px;    
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -143,17 +145,12 @@ ul {
     text-transform: uppercase;
 }
 .specifics-text {
-    margin: 0px;
     font-size: 14px;
     line-height: 1.71;
 }
 /*Чем мы занимаемся*/
 .business {
-    width: 1200px;
-    padding: 0px 15px;
-    margin-bottom: 94px;
-    margin-left: auto;
-    margin-right: auto;
+   margin-bottom: 94px;
 }
 .title {
     font-weight: 700;
@@ -161,27 +158,20 @@ ul {
     line-height: 1.16;
     text-align: center;
     color: var(--secondary-text-color);
-    margin: 0px 0px 50px 0px;
+    margin-bottom: 50px;
 }
 .business-list {
     display: flex;
-    margin: 0px;
-    padding: 0px;
     justify-content: space-between;
 }
 /*Наша команда*/
 .team {
-    padding: 94px 15px;
-    margin-left: auto;
-    margin-right: auto;
+    padding: 94px 0;
     background-color: var(--gray-button);;
 }
 .team-list {
-    margin: 0px auto;
-    padding: 0px;
     display: flex;
     justify-content: space-between;
-    width: 1200px;
 }
 .team-list li {
     background: #FFFFFF;
@@ -195,13 +185,14 @@ ul {
     line-height: 1.19;
     text-align: center;
     color: var(--secondary-text-color);
-    margin: 30px 0px 10px 0px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 .team-text {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin: 0px 0px 30px 0px;
+    margin-bottom: 30px;
 } 
 /*Подвал*/
 .footer {
@@ -210,11 +201,6 @@ ul {
     margin-left: auto;
     margin-right: auto;
     max-width: 1600px;
-}
-.section-footer {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .logo-white {
     color: white;
@@ -227,8 +213,8 @@ ul {
     margin: 0px;
     padding: 0px;
 }
-.address-list li:nth-child(2n) {
-    margin: 9px 0px;
+.address-list .list-info+ .list-info {
+    margin-top: 9px;
 }
 .address-maps {
     text-decoration: none;
@@ -248,25 +234,21 @@ ul {
 /*Портфолио css*/
 .general-link {
     color: var(--blue-color);
-    text-decoration: none;
 }
 .general-link:hover,
 .general-link:focus {
     
 }
 .section-list {
-    width: 1200px;
-    padding: 0px 15px;
     margin: 94px auto;
 }
 .key-list {
-    margin: 0px 0px 50px 0px;
-    padding: 0px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
-.key-list li:nth-child(2n) {
-    margin: 0px 8px;
+.key-list .key-button+ .key-button {
+    margin-left: 8px;
 }
 .key {
     color: var(--secondary-text-color);
@@ -277,29 +259,37 @@ ul {
     text-align: center;
     border-radius: 4px;
     border: none;
+    padding: 6px 22px;
 }
 .key:hover,
 .key:focus {
     color: var(--white-color);
     background-color: var(--blue-color);
-    border: none;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.general-key {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .navigation-list {
-    margin: 0px;
-    padding: 0px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    margin-top: -30px;
+    margin-left: -30px;
 }
-.navigation-list li:nth-child(n + 4) {
-    margin-top: 30px;
-  }
-.navigation-list li {
+.list {
     border: 1px solid #EEEEEE;
-    padding: 0px 0px 20px 0px;
+    flex-basis: calc(100% / 3 - 30px);
+    margin-top: 30px;
+    margin-left: 30px;
 }
 .link-navigation {
    text-decoration: none; 
+   display: block;
+}
+.list-text {
+    padding: 20px 24px;
 }
 .text-title {
     color: var(--secondary-text-color);
@@ -307,11 +297,9 @@ ul {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    margin: 20px 0px 0px 24px;
 }
 .indent-text {
     font-size: 16px;
     line-height: 1.87;
     color: var(--main-text-color);
-    margin: 0px 0px 0px 24px;
 }
