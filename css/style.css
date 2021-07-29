@@ -97,7 +97,6 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
-    max-width: 1600px;
 }
 .hero-title {
     font-weight: 900;
@@ -125,8 +124,11 @@ img {
 }
 /*Особености*/
 .specifics {
-    margin-top: 94px;
-    margin-bottom: 94px;
+    
+}
+.specifics-container {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .specifics-list {
     display: flex;
@@ -150,7 +152,7 @@ img {
 }
 /*Чем мы занимаемся*/
 .business {
-   margin-bottom: 94px;
+   padding-bottom: 94px;
 }
 .title {
     font-weight: 700;
@@ -200,7 +202,6 @@ img {
     padding: 60px 15px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1600px;
 }
 .logo-white {
     color: white;
@@ -240,7 +241,8 @@ img {
     
 }
 .section-list {
-    margin: 94px auto;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 .key-list {
     margin-bottom: 50px;
